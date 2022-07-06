@@ -1,0 +1,36 @@
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__title {
+    @include font(36px, 700, 1.17, 0.03em);
+    text-align: center;
+    margin-bottom: 50px;
+    }
+
+    &__list {
+        @include centeredFlex(flex);
+        cursor: pointer;
+    }
+}
+
+.clients__link {
+    @include centeredFlex(flex);
+    width: 170px;
+    height: 92px;
+    outline: transparent;
+    @include bordered(#AFB1B8);
+    border-radius: 4px;
+    color: var(--color-icon-primary);
+    @include transition(border);
+    @include transition(color);
+
+    &:hover, &:focus {
+        border: 1px solid var(--accent-color);
+        color: var(--accent-color);
+    }
+}
+
+.clients__item:not(:last-child) {
+    margin-right: 30px;
+}

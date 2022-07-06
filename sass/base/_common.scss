@@ -1,0 +1,21 @@
+.body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    font-family: var(--main-font);
+    font-size: 14px;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--primary-title-color);
+}
+
+.icon {
+    fill: currentColor;
+}

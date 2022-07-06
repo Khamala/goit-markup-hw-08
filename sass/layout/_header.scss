@@ -1,0 +1,86 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list .link.current {
+    color: var(--accent-color);
+}
+
+.nav__list .link:hover,
+.nav__list .link:focus {
+    color: var(--accent-color);
+}
+
+.nav__list {
+    @include font(14px, 500, 1.14, 0.02em);
+    display: flex;
+    margin-left: 93px;
+}
+
+.nav__list .link {
+    @include transition(color);
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav__link {
+    display: block;
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    letter-spacing: 0.02em;
+}
+
+.nav__link.hover-underline:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    
+}
+
+.kontakts__list .link:hover,
+.kontakts__list .link:focus {
+    color: var(--accent-color);
+}
+
+.kontakts__list .link {
+    color: var(--primary-text-color);
+    @include transition(color);
+}
+
+.kontakts__list {
+    @include centeredFlex(flex);
+    @include font(14px, 500, 1.14, 0.02em);
+    margin-left: auto;
+}
+
+.kontakts__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.kontakts__address {
+    @include centeredFlex(flex);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.kontakts__icon {
+    margin-right: 10px;
+}

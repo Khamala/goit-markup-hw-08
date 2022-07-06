@@ -1,0 +1,41 @@
+.benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__list {
+        display: flex;
+    }
+}
+
+.benefits__item {
+    flex-basis: 270px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__icon {
+        @include centeredFlex(flex);
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+        border-radius: 4px;
+        background-color: var(--bg-color);
+    }
+
+    &__subtitle {
+        @include font(14px, 700, 1.14, 0.03em);      
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        @include font(14px, 400, 1.71, 0.03em);
+    }
+}
+
+.text {
+    margin-top: 0;
+    margin-bottom: 0;
+}

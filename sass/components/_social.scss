@@ -1,0 +1,78 @@
+.social {
+    @include centeredFlex(flex);
+}
+
+.social__link {
+    @include centeredFlex(inline-flex);
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--primary-bg-color);
+    @include transition(background-color);
+    
+    &:hover, &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+
+.social__link:hover .icon,
+.social__link:focus .icon {
+    fill: var(--primary-button-color);
+}
+
+.social__link .icon {
+    @include transition(fill);
+
+}
+
+.social__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social__icons {
+    fill: var(--color-icon-primary);
+}
+
+        /*Footer Social*/
+
+.footer__social {
+    margin-right: auto;
+}
+
+.social__footer-icons {
+    fill: var(--primary-button-color);
+}
+
+.footer__text {
+    @include font(14px, 700, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: var(--primary-button-color);
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.footer__soclist {
+    display: flex;
+    align-items: center;
+}
+
+.footer__flex-element:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social__link {
+    @include centeredFlex(flex);
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    color: var(--primary-button-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    @include transition(background-color);
+
+    &:hover, &:focus {
+        background-color: var(--accent-color);
+    }
+}

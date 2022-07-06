@@ -1,0 +1,60 @@
+.button {
+    @include bordered(transparent);
+    border-radius: 4px;
+    color: var(--primary-title-color);
+    background-color: var(--bg-color);
+    font-family: inherit;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+.button.primary {
+    color: var(--primary-button-color);
+    background-color: var(--button-bg-color);
+    letter-spacing: 0.06em;
+    min-width: 200px;
+    padding: 10px 32px;
+}
+
+.button.secondary {
+    color: var(--primary-title-color);
+    background-color: var(--bg-color);
+    @include font(16px, 500, 1.62, 0.03em);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+        color: var(--primary-button-color);
+        background-color: var(--button-color-hover);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+ 
+.button-activ {
+    color: var(--primary-button-color);
+    background-color: var(--button-bg-color);
+    @include font(16px, 500, 1.62, 0.03em);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.button.button-activ {
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button.button-activ:hover,
+.button.button-activ:focus {
+    color: var(--primary-button-color);
+    background-color: var(--button-color-hover);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
