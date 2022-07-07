@@ -2,11 +2,11 @@
     background-color: var(--primary-dark-bg-color);
     padding-top: 60px;
     padding-bottom: 60px;
+}
 
-    &__container {
-        display: flex;
-        align-items: baseline;
-        }
+.footer__container {
+    display: flex;
+    align-items: baseline;
 }
 
 .logo-footer__link {

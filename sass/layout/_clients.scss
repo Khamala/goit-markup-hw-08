@@ -1,17 +1,17 @@
 .clients {
     padding-top: 94px;
     padding-bottom: 94px;
+}
 
-    &__title {
+.clients__title {
     @include font(36px, 700, 1.17, 0.03em);
     text-align: center;
     margin-bottom: 50px;
-    }
+}
 
-    &__list {
-        @include centeredFlex(flex);
-        cursor: pointer;
-    }
+.clients__list {
+    @include centeredFlex(flex);
+    cursor: pointer;
 }
 
 .clients__link {

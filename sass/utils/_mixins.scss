@@ -5,8 +5,8 @@
 @mixin font($size, $weight, $lh, $ls) {
     font-size: $size;
     font-weight: $weight;
-    line-height: $lheight;
-    letter-spacing: $lspacing;
+    line-height: $lh;
+    letter-spacing: $ls;
 }
 
 @mixin centeredFlex($dis) {
