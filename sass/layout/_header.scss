@@ -5,6 +5,7 @@
 .header__container {
     display: flex;
     align-items: center;
+ 
 }
 
 .nav {
@@ -85,8 +86,3 @@
 }
 
 
-@media screen and (min-width: 900px) {
-    .body {
-        background-color: orange;
-    }
-}

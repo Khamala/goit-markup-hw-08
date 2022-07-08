@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --accent-color: #2196F3;
   --primary-text-color: #757575;
@@ -298,11 +299,28 @@ summary {
 }
 
 .container {
+  /*это для центрирования контента. Чтобы когда достиглась макc ширина, продолжал центрироваться контент*/
   margin-left: auto;
   margin-right: auto;
+  /*---------------------*/
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .logo__link {
@@ -868,11 +886,6 @@ summary {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 900px) {
-  .body {
-    background-color: orange;
-  }
-}
 .hero__container {
   width: 696px;
 }
