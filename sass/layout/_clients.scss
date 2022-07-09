@@ -12,9 +12,7 @@
 .clients__list {
     @include centeredFlex(flex);
     cursor: pointer;
-
     flex-wrap: wrap;
-
     gap: 30px;
 }
 
@@ -34,8 +32,8 @@
         color: var(--accent-color);
     }
 }
-
+/*
 .clients__item:not(:last-child) {
 
-    /*margin-right: 30px;*/
-}
+    margin-right: 30px;
+}*/

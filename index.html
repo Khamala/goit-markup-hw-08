@@ -37,29 +37,8 @@
               <span class="logo__accent">Web</span>Studio</a>
         </div>
 
-
-
         <nav class="nav">
-
-
-          <button type="button" 
-          class="button-menu is-open" 
-          aria-expanded="false"
-          data-menu-button> 
-            <svg class="" width="40" height="40" aria-level="Переключатель мобильного меню">
-              <use class="icon-menu"
-              href="./images/icons.svg#icon-menu"></use>
-              <use class="icon-menu_close"
-              href="./images/icons.svg#icon-menu_close"></use>
-            </svg>
-          </button>
-
-          <div class="menu-container">
-          </div>
-
-
-
-     
+    
           <ul class="nav__list list">
             <li class="nav__item">
               <a href="./index.html" class="nav__link link current hover-underline">Студия</a></li>
@@ -90,6 +69,63 @@
 
         </ul>
 
+
+        <button type="button" class="menu-open-btn">
+          <svg class="mobile-menu__svg" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+
+        <div class="mob-menu is-hidden">
+          <div class="mob-menu-container">
+            <div class="mob-menu-top">
+              <button type="button" class="menu-close-btn">
+                <svg class="icon-menu-close" width="40" height="40">
+                  <use href="./images/icons.svg#icon-menu_close"></use>
+                </svg>
+              </button>
+              <ul class="mob-menu-list">
+                <li class="mob-menu-list-item">
+                  <a class="mob-menu-list-link current" href="./index.html">Студия</a>
+                </li>
+                <li class="mob-menu-list-item">
+                  <a class="mob-menu-list-link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mob-menu-list-item">
+                  <a class="mob-menu-list-link" href="./contacts.html">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mob-menu-bottom">
+              <ul class="mob-menu__links">
+                <li class="mob-menu-item">
+                  <a class="mob-menu__link" href="tel:+380961111111"> +38 096 111 11 11</a>
+                </li>
+                <li class="mob-menu-item">
+                  <a class="mob-menu__link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+                </li>
+              </ul>
+              <ul class="mob-menu-social">
+                <li class="mob-menu-social__item">
+                  <a class="menu-social-link" href="#">Instagram</a>
+                </li>
+                <li class="mob-menu-social__item">
+                  <a class="menu-social-link" href="#">Twitter</a>
+                </li>
+                <li class="mob-menu-social__item">
+                  <a class="menu-social-link" href="#">Facebook</a>
+                </li>
+                <li class="mob-menu-social__item">
+                  <a class="menu-social-link" href="#">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
     </header>
 
@@ -99,7 +135,8 @@
 
       <section class="hero overlay">
         <div class="container hero__container">
-          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="hero__title">Эффективные решения<br>для вашего бизнеса</h1>
+
           <button type="button" class="hero__button button primary" data-modal-open>
             Заказать услугу
           </button>
