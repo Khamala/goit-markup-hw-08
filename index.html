@@ -21,7 +21,7 @@
     
     <link rel="stylesheet" href="./css/main.min.css" />
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    
 
   </head>
 
@@ -32,6 +32,25 @@
     <header class="header">
       <div class="container header__container">
         <nav class="nav">
+
+
+          <button type="button" 
+          class="button-menu is-open" 
+          aria-expanded="false"
+          data-menu-button> 
+            <svg class="" width="40" height="40" aria-level="Переключатель мобильного меню">
+              <use class="icon-menu"
+              href="./images/icons.svg#icon-menu"></use>
+              <use class="icon-menu_close"
+              href="./images/icons.svg#icon-menu_close"></use>
+            </svg>
+          </button>
+
+          <div class="menu-container">
+            
+          </div>
+
+
 
           <div class="logo">
             <a href="./index.html" class="logo__link link">
@@ -75,7 +94,7 @@
 
       <!-- SECTION-HERO -->
 
-      <section class="hero section overlay">
+      <section class="hero overlay">
         <div class="container hero__container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero__button button primary" data-modal-open>
@@ -86,7 +105,7 @@
 
       <!-- BENEFITS -->
 
-      <section class="benefits section">
+      <section class="benefits">
         <div class="container benefits__container">
           <h2 class="benefits__title visually-hidden">Наши преимущества</h2>
 
@@ -162,7 +181,7 @@
 
       <!-- SERVICES -->
 
-      <section class="services section">
+      <section class="services">
         <div class="container services__container">
           <h2 class="services__title benefits__title">Чем мы занимаемся</h2>
 
@@ -225,7 +244,7 @@
 
       <!-- TEAM-->
 
-      <section class="team section">
+      <section class="team">
         <div class="container team-container">
           <h2 class="team__title benefits__title">Наша команда</h2>
           
@@ -426,7 +445,7 @@
 
       <!-- CLIENTS -->
 
-      <section class="section clients ">
+      <section class="clients ">
         <div class="container">
           <h2 class="benefits__title clients__title">Постоянные клиенты</h2>
 
@@ -684,6 +703,8 @@
 
 
 <script src="./js/modal.js"></script>
+
+<script src="./js/menu.js"></script>
 
   </body>
 </html>

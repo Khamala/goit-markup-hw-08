@@ -299,11 +299,9 @@ summary {
 }
 
 .container {
-  /*это для центрирования контента. Чтобы когда достиглась макc ширина, продолжал центрироваться контент*/
   margin-left: auto;
   margin-right: auto;
-  /*---------------------*/
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -315,11 +313,15 @@ summary {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -475,14 +477,6 @@ summary {
   cursor: pointer;
   display: inline-block;
   text-align: center;
-}
-
-.button.primary {
-  color: var(--primary-button-color);
-  background-color: var(--button-bg-color);
-  letter-spacing: 0.06em;
-  min-width: 200px;
-  padding: 10px 32px;
 }
 
 .button.secondary {
@@ -800,6 +794,26 @@ summary {
   align-items: center;
 }
 
+.button-menu {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.button-menu .icon-menu_close {
+  display: none;
+}
+
+.button-menu.is-open .icon-menu_close {
+  display: block;
+}
+
+.button-menu.is-open .icon-menu {
+  display: none;
+}
+
 .nav__list .link.current {
   color: var(--accent-color);
 }
@@ -886,15 +900,21 @@ summary {
   margin-right: 10px;
 }
 
-.hero__container {
-  width: 696px;
-}
-
 .hero {
+  /* Одинаковые для всех брекпоинтов */
   background-color: var(--primary-dark-bg-color);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  /* ------------------------------- */
+  /* Изменение паддингов */
+  padding-top: 118px;
+  padding-bottom: 118px;
+  /* ------------------------------- */
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .overlay {
@@ -908,29 +928,48 @@ summary {
 }
 
 .hero__title {
-  font-size: 44px;
+  /* Одинаковые для всех брекпоинтов */
+  margin-top: 0px;
+  margin-bottom: 30px;
+  /* ------------------------------- */
+  /* Изменение шрифта */
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.36;
+  line-height: 1.66;
   letter-spacing: 0.06em;
   color: var(--primary-button-color);
   text-transform: uppercase;
-  margin-top: 0px;
-  margin-bottom: 30px;
+  /* ------------------------------- */
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
 }
 
 .hero__button {
+  /* Одинаковые для всех брекпоинтов */
   font-size: 16px;
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  align-items: center;
-  display: inline-block;
+  color: var(--primary-button-color);
+  text-align: center;
+  background-color: var(--button-bg-color);
+  min-width: 200px;
+  padding: 10px 32px;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* ------------------------------- */
+  display: flex;
+  align-items: center;
 }
 .hero__button:hover, .hero__button:focus {
   color: var(--primary-button-color);
@@ -938,19 +977,35 @@ summary {
 }
 
 .benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.benefits__list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .benefits__item {
   flex-basis: 270px;
 }
-.benefits__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    flex-basis: 33.333%;
+  }
 }
 
 .benefits__icon {
@@ -988,6 +1043,11 @@ summary {
 
 .services {
   padding-bottom: 94px;
+}
+@media screen and (max-width: 1199px) {
+  .services {
+    display: none;
+  }
 }
 
 .services__title {

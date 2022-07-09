@@ -13,6 +13,35 @@
     align-items: center;
 }
 
+
+.button-menu {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+
+}
+
+.button-menu .icon-menu_close {
+    display: none;
+}
+
+.button-menu.is-open .icon-menu_close {
+    display: block;
+}
+
+.button-menu.is-open .icon-menu {
+    display: none;
+}
+
+.menu-container {
+    position: absolute;
+}
+
+
+
+
 .nav__list .link.current {
     color: var(--accent-color);
 }
@@ -54,6 +83,8 @@
     background-color: var(--accent-color);
     border-radius: 2px;  
 }
+
+
 
 .kontakts__list .link:hover,
 .kontakts__list .link:focus {

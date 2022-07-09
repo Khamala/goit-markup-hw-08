@@ -1,12 +1,18 @@
-.hero__container {
-    width: 696px;
-}
-
 .hero {
+    /* Одинаковые для всех брекпоинтов */
     background-color: var(--primary-dark-bg-color);
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    /* ------------------------------- */
+
+    /* Изменение паддингов */
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    /* ------------------------------- */
 }
 
 .overlay {
@@ -25,23 +31,43 @@
 }
 
 .hero__title {
-    @include font(44px, 900, 1.36, 0.06em);
-    color: var(--primary-button-color);
-    text-transform: uppercase;
+    /* Одинаковые для всех брекпоинтов */
     margin-top: 0px;
     margin-bottom: 30px;
+    /* ------------------------------- */
+
+    /* Изменение шрифта */
+    @include font(26px, 900, 1.66, 0.06em);
+    color: var(--primary-button-color);
+    text-transform: uppercase;
+    
+    @media screen and (min-width: 1200px) {
+        @include font(44px, 900, 1.36, 0.06em);
+    }
+    /* ------------------------------- */
 }
 
 .hero__button {
+    /* Одинаковые для всех брекпоинтов */
     @include font(16px, 700, 1.88, 0.06em);
-    align-items: center;
-    display: inline-block;
+    color: var(--primary-button-color);
+    text-align: center;
+    background-color: var(--button-bg-color);
+
+    min-width: 200px;
+    padding: 10px 32px;
 
     @include transition(color);
     @include transition(background-color);
+    /* ------------------------------- */
 
+    display: flex;
+    align-items: center;
+    
     &:hover, &:focus {
         color: var(--primary-button-color);
         background-color: var(--button-color-hover);
     }
 }
+
+

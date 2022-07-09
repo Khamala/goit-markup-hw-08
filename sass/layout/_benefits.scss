@@ -1,19 +1,32 @@
 .benefits {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom:60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .benefits__list {
+    @media screen and (min-width: 768px) {
         display: flex;
+        flex-wrap: wrap;
     }
+}
 
 .benefits__item {
     flex-basis: 270px;
-
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
+    @media screen and (min-width: 768px) {
+            flex-basis: 50%;
+        }
+    @media screen and (min-width: 1200px) {
+            flex-basis: 33.333%;
+        }     
 }
+
+
+
 
 .benefits__icon {
         @include centeredFlex(flex);
