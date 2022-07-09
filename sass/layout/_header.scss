@@ -5,13 +5,20 @@
 .header__container {
     display: flex;
     align-items: center;
- 
 }
 
 .nav {
-    display: flex;
-    align-items: center;
+
+    display: none;
+
+    @include tablet {
+        display: flex;
+        align-items: center;
+    }
+    
 }
+
+
 
 
 .button-menu {
@@ -20,7 +27,6 @@
     padding: 0;
     border: 0;
     background-color: transparent;
-
 }
 
 .button-menu .icon-menu_close {
@@ -38,6 +44,7 @@
 .menu-container {
     position: absolute;
 }
+
 
 
 
@@ -97,9 +104,15 @@
 }
 
 .kontakts__list {
-    @include centeredFlex(flex);
-    @include font(14px, 500, 1.14, 0.02em);
-    margin-left: auto;
+    display: none;
+
+    @include desktop {
+        @include centeredFlex(flex);
+        @include font(14px, 500, 1.14, 0.02em);
+        margin-left: auto;
+    }
+    
+    
 }
 
 .kontakts__item:not(:last-child) {

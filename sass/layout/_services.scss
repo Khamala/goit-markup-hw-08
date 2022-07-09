@@ -1,8 +1,10 @@
 .services {
-    @media screen and (max-width: 1199px) {
-        display: none;
-    }
+    display: none;
 
+    @include desktop {
+        display: block;
+    }
+    
     padding-bottom: 94px;
 }
 
