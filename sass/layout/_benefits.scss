@@ -16,7 +16,6 @@
 }
 
 .benefits__item {
-    flex-basis: 270px;
 
     @include tablet {
         width: calc((100% - 30px)/2);

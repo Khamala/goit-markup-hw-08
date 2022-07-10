@@ -149,8 +149,9 @@
 }
 
 .footer-wrap {
+    text-align: center;
+
     @include tablet {
-       
         display: flex;
         justify-content: space-around;
         flex-direction: column;
