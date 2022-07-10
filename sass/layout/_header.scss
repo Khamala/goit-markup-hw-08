@@ -10,8 +10,8 @@
     padding-bottom: 10px;
 
     @include tablet {
-        padding-top: 21px;
-        padding-bottom: 21px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     @include desktop {
