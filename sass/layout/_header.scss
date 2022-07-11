@@ -120,9 +120,6 @@
     }
 }
 
-
-
-
 .kontakts__address {
     @include centeredFlex(flex);
     padding-top: 32px;
@@ -136,7 +133,8 @@
 
     @include desktop {
         display: flex;
-      
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 }
 

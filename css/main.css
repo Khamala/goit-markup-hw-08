@@ -540,6 +540,12 @@ summary {
     width: 450px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 
 .modal__title {
   margin: 0;
@@ -942,6 +948,8 @@ summary {
 @media screen and (min-width: 1200px) {
   .kontakts__address {
     display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -1768,7 +1776,7 @@ summary {
 }
 @media screen and (min-width: 1200px) {
   .footer__contacts {
-    margin-right: 70px;
+    margin-right: auto;
   }
 }
 
@@ -1844,6 +1852,11 @@ summary {
   margin: 0;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .footer__text {
+    text-align: left;
+  }
+}
 
 .footer__soclist {
   display: flex;
@@ -1854,6 +1867,7 @@ summary {
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-content: left;
   }
 }
 
@@ -1934,6 +1948,11 @@ summary {
 }
 .form-mail__input:hover, .form-mail__input:focus {
   border: 1px solid var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .form-mail__input {
+    margin-bottom: 0px;
+  }
 }
 
 /*Kostyl*/

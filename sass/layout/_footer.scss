@@ -47,7 +47,7 @@
     }
     
     @include desktop {
-        margin-right: 70px;
+        margin-right: auto;
     }
 }
 
@@ -115,7 +115,9 @@
     color: var(--primary-button-color);
     margin: 0;
     margin-bottom: 20px;
-    
+    @include desktop {
+        text-align: left;
+    }
 }
 
 .footer__soclist {
@@ -124,6 +126,7 @@
 
     @include desktop {
             @include centeredFlex(flex);
+            justify-content: left;
         }
 }
 
@@ -199,6 +202,9 @@
 
     &:hover, &:focus {
         border: 1px solid var(--accent-color);
+    }
+    @include desktop {
+        margin-bottom: 0px;
     }
 }
 
