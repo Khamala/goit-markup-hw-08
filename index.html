@@ -52,7 +52,7 @@
         <ul class="kontakts__list list">
 
           <li class="kontakts__item">
-            <a href="mailto:info@devstudio.com" class="kontakts__address link">     
+            <a href="mailto:info@devstudio.com" class="kontakts__address link mail">     
               <svg class="icon kontakts__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>       
@@ -60,7 +60,7 @@
           </li>
 
           <li class="kontakts__item">
-            <a href="tel:+30961111111" class="kontakts__address link">
+            <a href="tel:+30961111111" class="kontakts__address link tel">
               <svg class="icon kontakts__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
@@ -68,7 +68,6 @@
           </li>
 
         </ul>
-
 
         <button type="button" class="menu-open-btn">
           <svg class="mobile-menu__svg" width="40" height="40">
@@ -87,37 +86,37 @@
               </button>
               <ul class="mob-menu-list list">
                 <li class="mob-menu-list-item">
-                  <a class="mob-menu-list-link current" href="./index.html">Студия</a>
+                  <a class="mob-menu-list-link current link" href="./index.html">Студия</a>
                 </li>
                 <li class="mob-menu-list-item">
-                  <a class="mob-menu-list-link" href="./portfolio.html">Портфолио</a>
+                  <a class="mob-menu-list-link link" href="./portfolio.html">Портфолио</a>
                 </li>
                 <li class="mob-menu-list-item">
-                  <a class="mob-menu-list-link" href="./contacts.html">Контакты</a>
+                  <a class="mob-menu-list-link link" href="./contacts.html">Контакты</a>
                 </li>
               </ul>
             </div>
             <div class="mob-menu-bottom">
               <ul class="mob-menu__links list">
                 <li class="mob-menu-item">
-                  <a class="mob-menu__link" href="tel:+380961111111"> +38 096 111 11 11</a>
+                  <a class="mob-menu__link link tel-menu" href="tel:+380961111111"> +38 096 111 11 11</a>
                 </li>
                 <li class="mob-menu-item">
-                  <a class="mob-menu__link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+                  <a class="mob-menu__link link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
                 </li>
               </ul>
               <ul class="mob-menu-social-list list">
                 <li class="mob-menu-social__item">
-                  <a class="menu-social-link" href="#">Instagram</a>
+                  <a class="menu-social-link link" href="#">Instagram</a>
                 </li>
                 <li class="mob-menu-social__item">
-                  <a class="menu-social-link" href="#">Twitter</a>
+                  <a class="menu-social-link link" href="#">Twitter</a>
                 </li>
                 <li class="mob-menu-social__item">
-                  <a class="menu-social-link" href="#">Facebook</a>
+                  <a class="menu-social-link link" href="#">Facebook</a>
                 </li>
                 <li class="mob-menu-social__item">
-                  <a class="menu-social-link" href="#">LinkedIn</a>
+                  <a class="menu-social-link link" href="#">LinkedIn</a>
                 </li>
               </ul>
             </div>
@@ -906,15 +905,47 @@
 <!-- 
   1. Десктоп. Хедер.
     - На .kontakts__address паддинги верх и низ по 32
+    - На .kontakts__list margin-left: auto;
   2. Десктоп. Футер.
     - текст на социал и форме не по центру, а сдвинут влево.
     - На .form-mail__input убран нижний марджин
     - На .footer__contacts поставлен margin-right: auto;
-  3. Десктоп. 
+  3. Десктоп. Модалка.
     - Размер модалки исправлен на width: 528px; height: 581px;
+    - На .backdrop исправлено transition: opacity 250ms, visibility 250ms, transform 250ms;
+  
+  4. Таблетка. Хедер.
+    - На .kontakts__list margin-left: auto;
+    - На ссылки .mail padding-top: 20px;
+                .tel padding-bottom: 20px;
+      На mail ли нижний марджин 10
 
-    1.50 минута - 2.30 минута
-    -не работает анимация. И не понятно с размерами модалки. 
+  5. Таблетка. Герой.
+    - высота 400
+  6. Таблетка. Клиенты.
+    - ширина картинок исправлена на 226 
+    - исправлен размер заголовка и его нижний марджин
+  
+  7. Мобилка. Хедер.
+    - Добавлена в общий контейнер кнопка меню 
+  8. Мобилка. Герой.
+    - Высота героя 400
+  9. Паддинги на секциях по 60, заголовок и его марджин в клиентах тоже меньше.
+  Размер картинок в клиентах 210
+
+  10. Для размера экрана 320 - исправлена форма в футере.
+
+  11. Мобильное меню - паддинги исправлены, цвета, подчеркивания
+  
+
+
+
+
+
+
+
+
+
 
 
 

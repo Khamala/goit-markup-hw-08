@@ -1,6 +1,11 @@
 .portfolio-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .portfolio-filter {
@@ -12,10 +17,12 @@
 
     @include tablet {
         justify-content: center;
+        margin-bottom: 30px;
     }
 
     @include desktop {
         justify-content: center;
+        margin-bottom: 50px;
     }
 }
 
@@ -28,12 +35,19 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+
+    @include tablet {
+        justify-content: flex-start;
+    }
 }
 
 .projects-list-flex-element {
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+        width: 100%;
+    }
+
     width: calc((100% - 30px) / 1);
     
-
     @include tablet {
         width: calc((100% - 30px) / 2);
     }
@@ -42,6 +56,7 @@
         width: calc((100% - 60px) / 3);
     }
 }
+
 
 .projects-inscription {
     padding-top: 20px;
@@ -95,6 +110,9 @@
     position: absolute;
     top: 0;
     margin: 0;
+
+    overflow-y: scroll;
+
     @include font(18px, 400, 1.56, 0.03em);
     padding-top: 63px;
     padding-bottom: 63px;
@@ -113,4 +131,13 @@
 
 .projects-hover:focus .projects-overlay {
     transform: translate(0);
+}
+
+.picture {
+    display: block;
+    
+}
+.img {
+    width: 100%;
+   
 }

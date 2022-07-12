@@ -206,7 +206,19 @@
     @include desktop {
         margin-bottom: 0px;
     }
+
+    @media screen and (min-width: 320px) {
+        width: 100%;
+        margin-right: 0%;
+    }
+    
+    @include tablet {
+        width: 450px;
+    }
 }
+
+
+
 
 /*Kostyl*/
 .footer__text-portfolio {
