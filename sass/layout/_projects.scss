@@ -74,6 +74,11 @@
     margin-bottom: 4px;
 }
 
+.projects-title-kostyl {
+    @include tablet {
+        padding-top: 35px;
+    }
+}
 
 .project-text {
     color: var(--primary-text-color);
