@@ -1688,6 +1688,12 @@ summary {
   }
 }
 
+.projects-grow {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .projects-inscription {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1696,6 +1702,7 @@ summary {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+  flex-grow: 1;
 }
 
 .projects-title {

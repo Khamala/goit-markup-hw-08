@@ -40,6 +40,8 @@
 }
 
 .benefits__subtitle {
+
+
        @include font(14px, 700, 1.14, 0.03em);
         text-align: center;
         text-transform: uppercase;
@@ -49,6 +51,7 @@
         @include tablet {
             text-align: start;
         }
+        
 }
 
 .benefits__text {
