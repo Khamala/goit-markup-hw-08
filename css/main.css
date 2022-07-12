@@ -1944,20 +1944,22 @@ summary {
 .form-mail__input:hover, .form-mail__input:focus {
   border: 1px solid var(--accent-color);
 }
-@media screen and (min-width: 1200px) {
-  .form-mail__input {
-    margin-bottom: 0px;
-  }
-}
 @media screen and (min-width: 320px) {
   .form-mail__input {
     width: 100%;
-    margin-right: 0%;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 768px) {
   .form-mail__input {
     width: 450px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-mail__input {
+    margin-bottom: 0px;
+    margin-right: 12px;
   }
 }
 
