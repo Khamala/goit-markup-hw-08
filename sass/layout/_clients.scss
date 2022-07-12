@@ -19,15 +19,19 @@
 
 .clients__title {
 
+     @include mobile {
+        @include font(28px, 700, 1.18, 0.03em);
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
     @include tablet {
         @include font(28px, 700, 1.18, 0.03em);
-        margin-bottom: 30px
+        margin-bottom: 30px;
+        text-align: center;
     }
 
-    @include mobile {
-        @include font(28px, 700, 1.18, 0.03em);
-        margin-bottom: 30px
-    }
+   
     @include desktop {
         @include font(36px, 700, 1.17, 0.03em);
         text-align: center;

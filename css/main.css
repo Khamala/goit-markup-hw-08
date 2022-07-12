@@ -1486,15 +1486,6 @@ summary {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .clients__title {
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
-    margin-bottom: 30px;
-  }
-}
 @media screen and (min-width: 480px) {
   .clients__title {
     font-size: 28px;
@@ -1502,6 +1493,17 @@ summary {
     line-height: 1.18;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
