@@ -44,6 +44,7 @@
         align-items: baseline;
         justify-content: space-around;
         text-align: center;
+        
     }
     
     @include desktop {
@@ -94,14 +95,16 @@
     text-align: center;
     margin-right: 0;
     
+    @include tablet {
+        margin-top: 0;
+    }
+    
     @include desktop {
         margin-right: auto;
         text-align: start;
     }
 
-    @include tablet {
-        margin-top: 0;
-    }
+    
 }
 
 .social__footer-icons {

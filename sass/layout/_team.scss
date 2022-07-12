@@ -10,6 +10,10 @@
         padding-top: 60px;
         padding-bottom: 60px;
     }
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .team__image {
@@ -22,7 +26,18 @@
     @include font(36px, 700, 1.17, 0.03em);
     text-align: center;
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @include tablet {
+        @include font(28px, 700, 1.17, 0.03em);
+
+    }
+    @include desktop {
+        @include font(36px, 700, 1.17, 0.03em);
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 50px;
+    }
 }
 
 .team__list {
